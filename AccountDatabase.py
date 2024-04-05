@@ -55,15 +55,6 @@ class AccountDatabase:
                 return print("Deposito realizado com sucesso")
             return print("Conta não encontrada")
 
-    # def extrato(self, cpf_sought):
-    #     for dict_account in self.all_accounts:
-    #         if dict_account.get('cpf_customer') == cpf_sought:
-    #             for operation in dict_account["extract"]:
-    #                 print(operation + "\n")
-    #             return print(f"Saldo da conta {dict_account['account_number']}, R${dict_account['balance']}")
-    #         else:
-    #             return print("Conta não encontrada")
-
     def extrato(self, cpf_sought):
         for dict_account in self.all_accounts:
             if dict_account.get('cpf_customer') == cpf_sought:
